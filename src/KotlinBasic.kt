@@ -1,3 +1,6 @@
+const val APP = "Kotlin Basic"
+const val VERSION = "0.0.1"
+
 fun main() {
     //output text
     var helloWorld: String = "Hello World"
@@ -62,7 +65,7 @@ fun main() {
     println(address)
     println(fullName)
 
-    //Variable
+    // VARIABLE
 
     // Mutable
     var thisIsMutable = "This is Mutable Variable"
@@ -73,10 +76,22 @@ fun main() {
     println(thisIsMutable)
     println(thisIsImmutable)
 
-    //nullable
-    var nama:String? = null
-    nama="Yadi"
+    // NULLABLE
+    // in kotlin, normally variable is not allowed to initiate as empty value or null, so need to assign the value or it will facing error.
+    // how to assign null value? kotlin has suport it but not recommended it. so when we want to initiate the value, we can add '?' after data type
 
+    var nama:String? = "Yadi Rosadi"
     println(nama)
+    // will produced error
+    //println(name.length)
+    // the right way to access the length without error
     println(nama?.length)
+    // change variable nama to null
+    nama= null
+    // access the length of nama after change the value
+    println(nama?.length)
+
+    // Constant Variable
+    // It's global variable & can be accessed from anywhere.
+    println("This is sample of constant variable : Welcome to $APP version $VERSION")
 }
