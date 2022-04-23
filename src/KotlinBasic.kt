@@ -14,7 +14,6 @@ fun main() {
     println("My Name is,  $name")
 
     // Data Type
-
     // number
     var age: Int = 30
     // float or double
@@ -24,7 +23,7 @@ fun main() {
     var hexaColor: Int = 0x000FFFF
     // Underscore on Decimal
     var priceLong: Long = 9_0000_0000_000L
-    //Convertion
+    //Conversion
     var ToByte: Byte = age.toByte()
     var ToFloat: Float = age.toFloat()
 
@@ -46,13 +45,11 @@ fun main() {
     var a: Char = 'A'
     var d: Char = 'D'
     var i: Char = 'I'
-
     println("$y$a$d$i")
 
     //String
     var firstName: String = "Yadi"
     var lastName: String = "Rosadi"
-
     var address: String = """ 
         street not defined
         west java
@@ -60,7 +57,6 @@ fun main() {
     """.trimIndent()
     var fullName: String = "$firstName $lastName"
     var lengthFullname: String = "$fullName length is ${fullName.length}"
-
     println(lengthFullname)
     println(firstName)
     println(lastName)
@@ -68,20 +64,17 @@ fun main() {
     println(fullName)
 
     // VARIABLE
-
     // Mutable
     var thisIsMutable = "This is Mutable Variable"
         thisIsMutable = "Variable can be change"
+    println(thisIsMutable)
     // Immutable
     val thisIsImmutable = "This is Immutable Variable, Cannot be changed"
-
-    println(thisIsMutable)
     println(thisIsImmutable)
 
     // NULLABLE
     // in kotlin, normally variable is not allowed to initiate as empty value or null, so need to assign the value or it will facing error.
     // how to assign null value? kotlin has suport it but not recommended it. so when we want to initiate the value, we can add '?' after data type
-
     var nama:String? = "Yadi Rosadi"
     println(nama)
     // will produced error
@@ -98,7 +91,7 @@ fun main() {
     println("This is sample of constant variable : Welcome to $APP version $VERSION")
 
     //Array Data Type
-    // In kotlin array has allow only just one data type
+    // In kotlin array has allow only just one data type in one collection
     // Array is a collection of a fixed number of values
     val cities : Array<String> = arrayOf("jakarta", "bandung","semarang")
     var ages: Array<Int> = arrayOf(160,155,177)
@@ -114,7 +107,6 @@ fun main() {
     println(cities[0])
     ages.set(1, 165)
     println(ages[1])
-
     //print all element of array
     println(Arrays.toString(cities))
 
@@ -123,7 +115,8 @@ fun main() {
     attends[0] = "Yadi"
     attends[1] = "Rosadi"
     attends[2] = "joko"
-    attends[3] = "dodo"
+    attends[3] = ""
     attends[4] = null
     println(Arrays.toString(attends))
+
 }
