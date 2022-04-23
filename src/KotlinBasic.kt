@@ -1,3 +1,5 @@
+import java.util.Arrays
+
 const val APP = "Kotlin Basic"
 const val VERSION = "0.0.1"
 
@@ -94,4 +96,34 @@ fun main() {
     // Constant Variable
     // It's global variable & can be accessed from anywhere.
     println("This is sample of constant variable : Welcome to $APP version $VERSION")
+
+    //Array Data Type
+    // In kotlin array has allow only just one data type
+    // Array is a collection of a fixed number of values
+    val cities : Array<String> = arrayOf("jakarta", "bandung","semarang")
+    var ages: Array<Int> = arrayOf(160,155,177)
+    //accessed value by index
+    println(cities[0])
+    println(ages.get(0))
+    //get size of array
+    println(cities.size)
+    println(ages.size)
+    //modify one of array value
+    cities.set(0, "tangerang") //or
+    //cities[0] = "tangerang"
+    println(cities[0])
+    ages.set(1, 165)
+    println(ages[1])
+
+    //print all element of array
+    println(Arrays.toString(cities))
+
+    //Array Nullable
+    val attends: Array<String?> = arrayOfNulls(5)
+    attends[0] = "Yadi"
+    attends[1] = "Rosadi"
+    attends[2] = "joko"
+    attends[3] = "dodo"
+    attends[4] = null
+    println(Arrays.toString(attends))
 }
