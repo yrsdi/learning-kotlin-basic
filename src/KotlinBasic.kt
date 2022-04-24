@@ -119,4 +119,18 @@ fun main() {
     attends[4] = null
     println(Arrays.toString(attends))
 
+    //Range Data Type
+    //val range = 1..10  
+    val range = 100 downTo 1
+
+    println(range.first)
+    println(range.last)
+    println(range.count())
+    println(range.contains(5)) //boolean
+    println(range.step)
+
+    for (x in range) {
+        print(x)
+    }
+
 }
