@@ -120,8 +120,8 @@ fun main() {
     println(Arrays.toString(attends))
 
     //Range Data Type
-    //val range = 1..10  
-    val range = 100 downTo 1
+    //val range = 1..10
+    val range = 10 downTo 1 step 3
 
     println(range.first)
     println(range.last)
@@ -130,7 +130,7 @@ fun main() {
     println(range.step)
 
     for (x in range) {
-        print(x)
+        println(x)
     }
 
 }
