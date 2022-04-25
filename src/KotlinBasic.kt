@@ -133,4 +133,37 @@ fun main() {
         println(x)
     }
 
+    //Math operation
+    var resultT = 6 + 4
+    println(resultT)
+    var resultK = 10 - 5
+    println(resultK)
+    var resultM = 10 * 10
+    println(resultM)
+    var resultD = 6 / 3
+    println(resultD)
+    var resultR = 10 % 4
+    println(resultR)
+
+    //Augmented Assignments
+    var total: Int = 0
+
+    val aNilai = 10
+    total += aNilai
+
+    val bNilai = 20
+    total += bNilai
+
+    val cNilai = 30
+    total += cNilai
+
+    println(total)
+
+    // unary oprator
+    total++
+    println(total)
+    total--
+    println(total)
+
+
 }
